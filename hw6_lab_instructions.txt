@@ -16,7 +16,7 @@ In this hw, you’ll work on your resume site. I'll be providing the starting HT
             b. Copy and paste your color codes in the commented section in the styles.css file.
             c. In your styles.css file change the background color of each header, footer, work experience, and education section.
             d. Add classes as needed.
-            e. Adjust font colors if needed
+            e. Adjust font colors if neededs
 
 5.	Pick two Google Fonts and add them to your site (https://fonts.google.com/)
 			a.	Go to the Google Fonts website explore and pick two web-safe fonts for your site
