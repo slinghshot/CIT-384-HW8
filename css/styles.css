@@ -24,6 +24,29 @@ body {
   margin: 0;
   padding: 0;
 }
+nav {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #dcd7c9;
+  margin-top: -20px;
+  border: solid 1px #a27b5c;
+}
+nav a {
+  padding: 15px;
+  display: inline-block;
+  width: 240px;
+  font-family: "Cairo Play", semi;
+  font-size: 1.2em;
+  background-color: #dcd7c9;
+  color: #a27b5c;
+}
+nav a:hover {
+  background-color: #a27b5c;
+  color: #dcd7c9;
+  white-space: nowrap;
+}
+
 .content-wrap {
   max-width: 950px;
   margin: 0 auto;
@@ -96,6 +119,9 @@ span {
 
 /* Header & Footer 
 ------------------------------------*/
+header {
+  padding-top: 20px;
+}
 header,
 footer {
   background-color: #3f4e4f;
@@ -210,5 +236,15 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   }
   #copyright {
     font-size: 0.7em;
+  }
+}
+
+/* For nav bar resizing if less than 1000px collapse */
+@media screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+  header {
+    padding-top: 0px;
   }
 }
