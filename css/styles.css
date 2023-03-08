@@ -117,6 +117,10 @@ span {
   font-size: 20px;
 }
 
+.setDisplay {
+  display: block;
+}
+
 /* Header & Footer 
 ------------------------------------*/
 header {
@@ -159,7 +163,16 @@ footer {
   background-color: #a27b5c;
   /* color: #2c3639; */
 }
-
+@media screen and (min-width: 1001px) {
+  #myLinks {
+    /* --#myLinks-display: block; */
+    display: var(block);
+  }
+  #xmark i,
+  #burger i {
+    display: none;
+  }
+}
 /* ------------------------------------
 for MOBILE anything less than 650 px decrease size of fonts to fit page properly
 ------------------------------------*/
@@ -207,40 +220,10 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   .column-narrowm {
     min-height: 175px;
   }
-  #myLinks {
-    display: none;
-  }
-  /* .display {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  } */
-  .display a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  .display a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .display a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  .active {
-    background-color: #04aa6d;
-    color: white;
-  }
 
-  /* header {
+  header {
     padding-top: 0px;
-  } */
+  }
 
   h1 {
     font-size: 2.5em;
@@ -268,5 +251,61 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   }
   #copyright {
     font-size: 0.7em;
+  }
+
+  /* working on floating mobile menu */
+  /* .wide-screen {
+    display: none;
+  } */
+
+  .display {
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    padding: 35px;
+    border: none;
+  }
+
+  .display #myLinks {
+    display: none;
+  }
+
+  .display a {
+    /* color: white; */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .display a.icon {
+    background: #dcd7c9;
+    color: #3f4e4f;
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    border: solid 1px #a27b5c;
+    border-radius: 20%;
+    width: 15px;
+  }
+
+  .display a:hover {
+    background-color: #a27b5c;
+    color: #dcd7c9;
+    /* border: solid 1px #a27b5c; */
+  }
+  #myLinks {
+    position: fixed;
+    bottom: 50px;
+    right: 59px;
+    border: solid 1px #a27b5c;
+  }
+  .wide-screen {
+    border-top: solid 1px #a27b5c;
+    color: #a27b5c;
+  }
+  #xmark {
+    display: none;
   }
 }

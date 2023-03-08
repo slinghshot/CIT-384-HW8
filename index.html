@@ -11,33 +11,64 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400&family=Cairo+Play:wght@200;500;600&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14f6a35310.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
     <script>
         function myFunction() {
-            var x = document.getElementsByClassName("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+            var links = document.getElementById("myLinks");
+            var xmark = document.getElementById("xmark");
+            var burger = document.getElementById("burger");
+            if (links.style.display === "block") {
+                links.style.display = "none";
+                xmark.style.display = "none";
+                burger.style.display = "block";
             } else {
-                x.style.display = "block";
+                links.style.display = "block";
+                xmark.style.display = "block";
+                burger.style.display = "none";
             }
-        } 
-    </script>
+        }
+        function menu() {
+            var navLinks = document.getElementById("myLinks")
+            var xmark = document.getElementById("xmark");
+            var burger = document.getElementById("burger");
+            if (innerWidth > 1000) {
+                navLinks.style.display = "block";
+            }
+            else if (innerWidth <= 1000) {
+                navLinks.style.display = "none";
+                xmark.style.display = "none";
+                burger.style.display = "block";
 
+            }
+        }
+
+        window.addEventListener('resize', menu);
+
+    </script>
 </head>
 
 <body>
     <!-- // Intro-->
+    <script>
+        window.onresize = console.log(window.innerWidth);
+    </script>
     <header>
-        <nav class="display">
+        <nav class="display topnav">
+            <!-- <a href="#home" class="active">Logo</a> -->
             <div id="myLinks">
                 <a href="#" class="wide-screen">Home</a>
                 <a href="#" class="wide-screen">Work Experience</a>
                 <a href="#" class="wide-screen">Education</a>
                 <a href="#" class="wide-screen">Contact</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" id="burger" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-
+            <a href="javascript:void(0);" class="icon" id="xmark" onclick="myFunction()">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
         </nav>
         <div class="content-wrap">
             <div class="column-narrow column-narrowm">
