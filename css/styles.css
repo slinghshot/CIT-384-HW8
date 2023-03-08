@@ -161,9 +161,22 @@ footer {
 /* Education
 ------------------------------------*/
 #Education {
-  background-color: #a27b5c;
+  /* background-color: #a27b5c; */
   /* color: #2c3639; */
+  background-image: url("../images/bg.webp");
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.edu-wrapped {
+  background: rgba(162, 123, 92, 0.96);
+  width: 100%;
+}
+
 @media screen and (min-width: 1018px) {
   #xmark i,
   #burger i {
@@ -305,4 +318,7 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   #xmark {
     display: none;
   }
+  /* #Education {
+    background-attachment: scroll;
+  } */
 }
