@@ -8,9 +8,6 @@ https://colorhunt.co/palette/2c36393f4e4fa27b5cdcd7c9
 
 /* Global styles 
 ------------------------------------*/
-/* body {
-  /* background: #4e6e81; 
-} */
 html {
   background-color: #3f4e4f;
   box-sizing: border-box;
@@ -161,8 +158,6 @@ footer {
 /* Education
 ------------------------------------*/
 #Education {
-  /* background-color: #a27b5c; */
-  /* color: #2c3639; */
   background-image: url("../images/bg.webp");
   height: 100%;
   /* Create the parallax scrolling effect */
@@ -177,7 +172,7 @@ footer {
   width: 100%;
 }
 
-@media screen and (min-width: 1018px) {
+@media screen and (min-width: 1035px) {
   #xmark i,
   #burger i {
     display: none;
@@ -186,7 +181,7 @@ footer {
 /* ------------------------------------
 for MOBILE anything less than 650 px decrease size of fonts to fit page properly
 ------------------------------------*/
-@media screen and (max-width: 1017px) {
+@media screen and (max-width: 1034px) {
   html {
     background-color: #3f4e4f;
     box-sizing: content-box;
@@ -318,7 +313,7 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   #xmark {
     display: none;
   }
-  /* #Education {
-    background-attachment: scroll;
-  } */
+  .edu-wrapped {
+    background: rgba(162, 123, 92, 1);
+  }
 }
