@@ -30,6 +30,7 @@ nav {
   margin-top: -20px;
   border: solid 1px #a27b5c;
 }
+
 .wide-screen {
   padding: 12px;
   display: inline-block;
@@ -38,6 +39,7 @@ nav {
   font-size: 1.2em;
   background-color: #dcd7c9;
   color: #a27b5c;
+  text-decoration: none;
 }
 .wide-screen:hover {
   background-color: #a27b5c;
