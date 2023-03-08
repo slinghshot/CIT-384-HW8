@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/14f6a35310.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
+    <!--For mobile script for resizing nav bar-->
     <script>
         function myFunction() {
             var links = document.getElementById("myLinks");
@@ -33,10 +34,12 @@
             var navLinks = document.getElementById("myLinks")
             var xmark = document.getElementById("xmark");
             var burger = document.getElementById("burger");
-            if (innerWidth > 1000) {
+            if (innerWidth > 1018) {
                 navLinks.style.display = "block";
+                xmark.style.display = "none";
+                burger.style.display = "none";
             }
-            else if (innerWidth <= 1000) {
+            else if (innerWidth < 1018) {
                 navLinks.style.display = "none";
                 xmark.style.display = "none";
                 burger.style.display = "block";
@@ -51,17 +54,15 @@
 
 <body>
     <!-- // Intro-->
-    <script>
-        window.onresize = console.log(window.innerWidth);
-    </script>
     <header>
         <nav class="display topnav">
             <!-- <a href="#home" class="active">Logo</a> -->
             <div id="myLinks">
-                <a href="#" class="wide-screen">Home</a>
-                <a href="#" class="wide-screen">Work Experience</a>
-                <a href="#" class="wide-screen">Education</a>
-                <a href="#" class="wide-screen">Contact</a>
+                <a href="#" class="wide-screen">About</a>
+                <a href="#WorkExperience" class="wide-screen">Work Experience</a>
+                <a href="#Education" class="wide-screen">Education</a>
+                <a href="#contact" class="wide-screen">Contact</a>
+                <a href="#contact" class="wide-screen">Download PDF</a>
             </div>
             <a href="javascript:void(0);" class="icon" id="burger" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
@@ -74,7 +75,7 @@
             <div class="column-narrow column-narrowm">
                 <img class="profile-img" src="images/ssingh.jpg" alt="Simer Singh">
             </div>
-            <div class="column-wide column-widem">
+            <div class="column-wide">
                 <h1 id="FullName">Simer Singh</h1>
                 <h2>DevOps Engineer</h2>
                 <p>I have had the privilege of gaining hands-on experience in various roles,
@@ -100,7 +101,6 @@
         <section id="WorkExperience">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
-
                 <div class="column-narrow">
                     <!-- Job Details: copy this whole block to add more jobs -->
                     <h3>DevOps Engineer</h3>
@@ -217,7 +217,7 @@
 
     <!-- // Footer & contact info -->
     <footer>
-        <div class="content-wrap">
+        <div class="content-wrap" id="contact">
             <h2>Let's Keep in Touch!</h2>
 
             <!-- Social media and contact links. Add or remove any networks. -->
