@@ -11,6 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,400&family=Cairo+Play:wght@200;500;600&display=swap"
         rel="stylesheet">
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        } 
+    </script>
 
 </head>
 
@@ -18,10 +28,16 @@
     <!-- // Intro-->
     <header>
         <nav class="display">
-            <a href="#">Home</a>
-            <a href="#">Work Experience</a>
-            <a href="#">Education</a>
-            <a href="#">Contact</a>
+            <div id="myLinks">
+                <a href="#" class="wide-screen">Home</a>
+                <a href="#" class="wide-screen">Work Experience</a>
+                <a href="#" class="wide-screen">Education</a>
+                <a href="#" class="wide-screen">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
         </nav>
         <div class="content-wrap">
             <div class="column-narrow column-narrowm">

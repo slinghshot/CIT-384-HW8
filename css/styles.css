@@ -32,8 +32,8 @@ nav {
   margin-top: -20px;
   border: solid 1px #a27b5c;
 }
-nav a {
-  padding: 15px;
+.wide-screen {
+  padding: 12px;
   display: inline-block;
   width: 240px;
   font-family: "Cairo Play", semi;
@@ -41,7 +41,7 @@ nav a {
   background-color: #dcd7c9;
   color: #a27b5c;
 }
-nav a:hover {
+.wide-screen:hover {
   background-color: #a27b5c;
   color: #dcd7c9;
   white-space: nowrap;
@@ -163,7 +163,7 @@ footer {
 /* ------------------------------------
 for MOBILE anything less than 650 px decrease size of fonts to fit page properly
 ------------------------------------*/
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 1000px) {
   html {
     background-color: #3f4e4f;
     box-sizing: content-box;
@@ -207,8 +207,40 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   .column-narrowm {
     min-height: 175px;
   }
-  .column-widem {
+  #myLinks {
+    display: none;
   }
+  /* .display {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  } */
+  .display a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .display a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .display a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+
+  /* header {
+    padding-top: 0px;
+  } */
 
   h1 {
     font-size: 2.5em;
@@ -236,15 +268,5 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   }
   #copyright {
     font-size: 0.7em;
-  }
-}
-
-/* For nav bar resizing if less than 1000px collapse */
-@media screen and (max-width: 1000px) {
-  nav {
-    display: none;
-  }
-  header {
-    padding-top: 0px;
   }
 }
