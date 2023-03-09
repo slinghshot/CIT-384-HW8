@@ -29,6 +29,7 @@ nav {
   background-color: #dcd7c9;
   margin-top: -20px;
   border: solid 1px #a27b5c;
+  z-index: 1;
 }
 
 .wide-screen {
@@ -74,6 +75,8 @@ nav {
 .profile-img {
   border-radius: 50%;
   width: 100%;
+  filter: drop-shadow(0 0 0.5rem #a27b5c);
+
   /* width: 300px; */
   /* float: left; */
   /* margin-right: 30px; */
@@ -261,10 +264,6 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   }
 
   /* working on floating mobile menu */
-  /* .wide-screen {
-    display: none;
-  } */
-
   .display {
     overflow: hidden;
     background-color: transparent;
@@ -295,6 +294,7 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
     border: solid 1px #a27b5c;
     border-radius: 20%;
     width: 15px;
+    filter: drop-shadow(0 0 0.5rem #a27b5c);
   }
 
   .display a:hover {
@@ -305,8 +305,9 @@ for MOBILE anything less than 650 px decrease size of fonts to fit page properly
   #myLinks {
     position: fixed;
     bottom: 50px;
-    right: 59px;
-    border: solid 1px #a27b5c;
+    right: 62px;
+    /* border: solid 1px #a27b5c; */
+    filter: drop-shadow(0 0 0.75rem #a27b5c);
   }
   .wide-screen {
     border-top: solid 1px #a27b5c;
